@@ -70,3 +70,31 @@
   font-size: 1.3rem;
   font-weight: 500;
 }
+
+.Products {
+  min-height: calc(100vh - 66px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Products_container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px
+}
+.Products_card{
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Products_card img {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+}
+.Products_card h2 {
+
+}

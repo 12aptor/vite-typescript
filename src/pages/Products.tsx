@@ -30,13 +30,19 @@ export const Products = () => {
   console.log(products)
 
   return (
-    <div>
-      {
-        products.length > 0 &&
-        products.map((product) => (
-          <div>{product.title}</div>
-        ))
-      }
+    <div className="Products">
+      <div className="Products_container">
+        {
+          products.length > 0 &&
+          products.map((product) => (
+            <div key={product.id} className="Products_card">
+              <img src={product.thumbnail} alt="product card photo" />
+              <h2>{product.title}</h2>
+              <p>{product.price}</p>
+            </div>
+          ))
+        }
+      </div>
     </div>
   )
 }
